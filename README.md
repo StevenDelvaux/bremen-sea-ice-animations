@@ -1,1 +1,2 @@
 # bremen-sea-ice-animations
+This repository creates 10-day animations of Arctic sea ice concentration maps. It creates animations for both the raw unprocessed images as well as smoothed version using pixelwise 3-day or 5-day medians to filter out some daily artifacts from the images. It runs as an automated Python script that runs daily during the Arctic melt season (June to September)
