@@ -45,7 +45,7 @@ def padzeros(x,n=2):
 
 def getfilename(date, orig=False):
 	daystring = str(date.day) if date.day >= 10 else '0' + str(date.day);
-	return prefix + str(date.year) + '0' + str(date.month) + daystring + suffix + ('' if orig else '_bis') + '.png'
+	return prefix + str(date.year) + ('0' if date.month < 10 else '') + str(date.month) + daystring + suffix + ('' if orig else '_bis') + '.png'
 	
 def getmedianfilename(startdate, enddate, caa = False):
 	return path + getAverageType() + '_' + getDateIsoString(startdate) + '_to_' + getDateIsoString(enddate) + ('caa' if caa else '') + '.png'
